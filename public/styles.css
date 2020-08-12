@@ -81,6 +81,7 @@ header {
 .card {
     background-color: var(--color-purple);
     cursor: pointer;
+    display: grid;
 }
 .card_image-container img {
     width: 100%;
@@ -93,6 +94,7 @@ header {
 .card_info{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 .card_price {
     background-color: var(--color-purple);
@@ -138,4 +140,18 @@ iframe {
     height: 90%;
     position: absolute;
     top: 5%;
+}
+
+/*==== FEATURED ==== */
+.featured-wrapper.card_image-container{
+    position: relative;
+}
+.featured {
+    position: absolute;
+    background: #f7d05f;
+    color: #111;
+    padding: 2px 8px;
+    right: 5px;
+    border-radius: 16px;
+    top: -11px;
 }
